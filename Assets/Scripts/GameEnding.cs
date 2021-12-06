@@ -50,10 +50,10 @@ public class GameEnding : MonoBehaviour
             audioSource.Play();
             m_HasAudioPlayed = true;
         }
-
+        
         m_Timer += Time.deltaTime;
-        imageCanvasGroup.alpha = m_Timer / fadeDuration;
-
+        imageCanvasGroup.alpha = 1; // m_Timer / fadeDuration;
+        
         if (m_Timer > fadeDuration + displayImageDuration)
         {
             if (doRestart)
