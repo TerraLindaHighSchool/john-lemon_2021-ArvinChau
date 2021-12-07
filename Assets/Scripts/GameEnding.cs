@@ -52,7 +52,7 @@ public class GameEnding : MonoBehaviour
         }
         
         m_Timer += Time.deltaTime;
-        imageCanvasGroup.alpha = 1; // m_Timer / fadeDuration;
+        imageCanvasGroup.alpha = m_Timer / fadeDuration;
         
         if (m_Timer > fadeDuration + displayImageDuration)
         {
